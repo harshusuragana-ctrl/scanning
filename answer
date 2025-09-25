@@ -1,0 +1,128 @@
+📊 Dummy Nessus Scan Report (Example)
+
+Target: Localhost (127.0.0.1)
+Scanner Used: Nessus Essentials
+Date: 25 September 2025
+
+🔎 Scan Summary
+
+Total Vulnerabilities Found: 6
+
+Critical: 1
+
+High: 2
+
+Medium: 2
+
+Low: 1
+
+⚠️ Sample Vulnerabilities Detected
+
+Critical – Outdated OpenSSL Version (CVE-2022-0778)
+
+Risk: Remote code execution possible.
+
+Fix: Update OpenSSL to the latest stable version.
+
+High – SMB Signing Not Required
+
+Risk: Susceptible to man-in-the-middle (MITM) attacks.
+
+Fix: Enable SMB signing via Group Policy.
+
+High – Weak Password Policy Detected
+
+Risk: Easy for attackers to brute-force accounts.
+
+Fix: Enforce strong password rules (length, complexity, expiry).
+
+Medium – Outdated Chrome Browser
+
+Risk: Exploitable browser vulnerabilities.
+
+Fix: Update to the latest version.
+
+Medium – SSH Server Supports Weak Ciphers
+
+Risk: Attackers can use downgrade attacks.
+
+Fix: Disable weak ciphers in SSH config.
+
+Low – ICMP Timestamp Response Enabled
+
+Risk: System time disclosure.
+
+Fix: Disable ICMP timestamp responses.
+
+Interview Questions & Answers
+
+
+1. What is vulnerability scanning?
+
+Vulnerability scanning is the automated process of finding security weaknesses in systems, applications, or networks. It identifies outdated software, missing patches, and misconfigurations that could be exploited.
+
+2. Difference between vulnerability scanning and penetration testing?
+
+Vulnerability Scanning: Automated, broad detection of known weaknesses. It shows what vulnerabilities exist.
+
+Penetration Testing: Manual + automated simulation of real attacks. It shows how those vulnerabilities could be exploited.
+
+3. What are some common vulnerabilities in personal computers?
+
+Missing OS/security patches
+
+Weak or reused passwords
+
+Outdated browsers/software
+
+Open/unnecessary ports and services
+
+Misconfigured firewalls
+
+No antivirus/antimalware protection
+
+4. How do scanners detect vulnerabilities?
+
+They compare system data with known vulnerability databases (CVE/CVSS) using methods like:
+
+Banner grabbing (service/software version detection)
+
+Port scanning
+
+Misconfiguration checks
+
+Weak/default credential tests
+
+5. What is CVSS?
+
+CVSS (Common Vulnerability Scoring System) is a framework for rating the severity of security flaws.
+
+0.0–3.9: Low
+
+4.0–6.9: Medium
+
+7.0–8.9: High
+
+9.0–10.0: Critical
+
+6. How often should vulnerability scans be performed?
+
+Regularly: monthly or quarterly for personal systems
+
+After major software/OS updates
+
+Before and after deploying new applications
+
+7. What is a false positive in vulnerability scanning?
+
+A false positive occurs when a scanner reports a vulnerability that does not actually exist. It often happens due to misconfigurations, outdated vulnerability databases, or inaccurate version detection.
+
+8. How do you prioritize vulnerabilities?
+
+Use CVSS score (Critical first)
+
+Assess asset importance (e.g., servers vs. personal PCs)
+
+Consider exploit availability
+
+Fix critical/high issues immediately, then medium/low
